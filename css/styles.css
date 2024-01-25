@@ -231,8 +231,47 @@ button:active {
 
 .texto-nosotros {
     width: 500px;
+    padding-bottom: 5rem;
 }
 
+@media only screen and (max-width:768px) {
+
+p{
+    padding-bottom: 1rem;
+}
+
+.texto-nosotros{
+    width: 700px;
+}
+
+.nosotros{
+    width: 1000px ; 
+}
+
+.cont{
+    padding: 0 2rem 0 2rem;
+}
+
+}
+
+@media only screen and (max-width:576px) {
+
+.cont{
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+.texto-nosotros{
+    width: 400px;
+    padding-bottom: 4rem;
+}
+
+.nosotros{
+    width: 450px;
+    height: 400px;
+}
+
+}
 
 /*--------------------------------------------*/
 
