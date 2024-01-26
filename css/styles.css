@@ -426,7 +426,7 @@ p{
 
 .hero-contacto {
     background-image: url("../img/img-contacto.jpg");
-    height: 400px;
+    height: 430px;
     width: 700px;
     background-repeat: no-repeat;
     background-position: center;
@@ -448,6 +448,28 @@ p{
 .btn-form:hover {
     background-color: rgb(158, 0, 0);
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-content{
+        padding: 0 2.5rem 0 2.5rem;
+    }
+
+    .hero-contacto{
+        height: 250px ;
+        width:  850px;
+        margin-left: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+.hero-contacto{
+    display: none;
+}
+
+
 }
 
 /*--------------------------------------------*/
