@@ -153,65 +153,6 @@ button:active {
 
 }
 
-@media only screen and (max-width:768px) {
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    .flex-container {
-        padding: 3rem;
-    }
-
-    .hero {
-        margin-left: 3rem;
-        height: 560px;
-        width: 432px;
-    }
-
-
-    p {
-        margin-bottom: 0;
-        font-size: 16px;
-    }
-
-    .btn-index {
-        height: 50px;
-        width: 200px;
-        font-size: 28px;
-    }
-
-
-}
-
-@media only screen and (max-width:576px) {
-
-    h1 {
-        font-size: 6rem;
-    }
-
-    p {
-        font-size: 20px;
-    }
-
-    .text {
-        text-align: center;
-
-    }
-
-    .btn-index {
-        height: 60px;
-        width: 300px;
-        font-size: 35px;
-    }
-
-    .hero {
-        display: none;
-    }
-
-
-}
-
 /*--------------------------------------------*/
 
 
@@ -232,45 +173,6 @@ button:active {
 .texto-nosotros {
     width: 500px;
     padding-bottom: 5rem;
-}
-
-@media only screen and (max-width:768px) {
-
-    p {
-        padding-bottom: 1rem;
-    }
-
-    .texto-nosotros {
-        width: 700px;
-    }
-
-    .nosotros {
-        width: 1000px;
-    }
-
-    .cont {
-        padding: 0 2rem 0 2rem;
-    }
-
-}
-
-@media only screen and (max-width:576px) {
-
-    .cont {
-        flex-direction: column;
-        padding-bottom: 5rem;
-    }
-
-    .texto-nosotros {
-        width: 400px;
-        padding-bottom: 4rem;
-    }
-
-    .nosotros {
-        width: 450px;
-        height: 400px;
-    }
-
 }
 
 /*--------------------------------------------*/
@@ -376,61 +278,6 @@ button:active {
     color: white;
 }
 
-
-@media only screen and (max-width: 768px) {
-
-
-    .card img {
-        height: 15rem;
-    }
-
-    .card {
-
-        height: 23rem;
-        margin: 0.7rem;
-        ;
-
-    }
-
-    .card-texto{
-        height: 85%;
-    }
-
-    .card-container {
-        padding-bottom: 5rem;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-
-    .asesorias {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card {
-        margin-bottom: 3rem;
-        height: 28rem;
-        width: 22rem;
-    }
-
-    .card img {
-    height: 20rem;
-}
-
-    .card-container{
-        padding-bottom: 3rem;
-    }
-
-    .card-texto{
-        height: 75%;
-    }
-}
-
-
-
-
 /*--------------------------------------------*/
 
 
@@ -453,24 +300,6 @@ button:active {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-}
-
-@media only screen and (max-width: 576px) {
-
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-    }
-
-
 }
 
 /*--------------------------------------------*/
@@ -506,7 +335,102 @@ button:active {
     color: white;
 }
 
-@media only screen and (max-width: 768px) {
+
+/*--------------------------------------------*/
+
+
+
+
+
+/* *** MEDIA QUERIES *** */
+
+@media only screen and (max-width:768px) {
+
+    /* *** Index media *** */
+    h1 {
+        font-size: 4rem;
+    }
+
+    .flex-container {
+        padding: 3rem;
+    }
+
+    .hero {
+        margin-left: 3rem;
+        height: 560px;
+        width: 432px;
+    }
+
+
+    p {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .btn-index {
+        height: 50px;
+        width: 200px;
+        font-size: 28px;
+    }
+
+    /*--------------------------------------------*/
+
+
+    /* *** nosotros media *** */
+    p {
+        padding-bottom: 1rem;
+    }
+
+    .texto-nosotros {
+        width: 700px;
+    }
+
+    .nosotros {
+        width: 1000px;
+    }
+
+    .cont {
+        padding: 0 2rem 0 2rem;
+    }
+
+    /*--------------------------------------------*/
+
+
+    /* *** planes media *** */
+    .card img {
+        height: 15rem;
+    }
+
+    .card {
+
+        height: 23rem;
+        margin: 0.7rem;
+        ;
+
+    }
+
+    .card-texto {
+        height: 85%;
+    }
+
+    .card-container {
+        padding-bottom: 5rem;
+    }
+
+    /*--------------------------------------------*/
+
+
+    /* *** testimonios media *** */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    /*--------------------------------------------*/
+
+
+    /* *** Contacto media *** */
+
     .contact-content {
         padding: 0 2.5rem 0 2.5rem;
     }
@@ -517,15 +441,103 @@ button:active {
         margin-left: 3rem;
     }
 
+    /*--------------------------------------------*/
+
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width:576px) {
 
+    /* *** Index media *** */
+    h1 {
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .text {
+        text-align: center;
+
+    }
+
+    .btn-index {
+        height: 60px;
+        width: 300px;
+        font-size: 35px;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .flex-container {
+        padding-bottom: 4rem;
+    }
+
+    /*--------------------------------------------*/
+
+    /* *** nosotros media *** */
+    .cont {
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .texto-nosotros {
+        width: 400px;
+        padding-bottom: 4rem;
+    }
+
+    .nosotros {
+        width: 450px;
+        height: 400px;
+    }
+
+    /*--------------------------------------------*/
+
+    /* *** planes media *** */
+    .asesorias {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+        height: 28rem;
+        width: 22rem;
+    }
+
+    .card img {
+        height: 20rem;
+    }
+
+    .card-container {
+        padding-bottom: 3rem;
+    }
+
+    .card-texto {
+        height: 75%;
+    }
+
+    /*--------------------------------------------*/
+
+
+    /* *** testimonios media *** */
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        padding: 0 4rem 4rem 4rem;
+    }
+
+    /*--------------------------------------------*/
+
+    /* *** contacto media *** */
     .hero-contacto {
         display: none;
     }
 
-
+    /*--------------------------------------------*/
 }
 
 /*--------------------------------------------*/
