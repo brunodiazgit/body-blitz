@@ -1,0 +1,37 @@
+/* *** Header *** */
+
+header{
+    z-index: 1;
+    background-color: #141514;
+    position: sticky;
+    top: 0;
+    nav{
+        img{
+            height: 90px;
+            width: 90px;
+        }
+    }
+    .menu-nav{
+        flex-grow: 0;
+    }
+    .nav-item{
+        text-decoration: none;
+        color: #fffdfc;
+        font-size: 1.3rem;
+        &:hover{
+        color: red;
+        }
+    }
+    .navbar-nav{
+        column-gap: 1.5rem;
+        letter-spacing: 2.5px;
+    }
+    .navbar-toggler{
+        background-color: rgb(185, 4, 4);
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+/*--------------------------------------------*/

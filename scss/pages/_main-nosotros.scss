@@ -1,0 +1,18 @@
+/* ***Sección de Nosotros***  */
+.main-nosotros{
+    .texto-nosotros{
+        width: 500px;
+        padding-bottom: 5rem;
+    }
+    .nosotros{
+        background-image: url("./../img/sobre-nosotros.jpg");
+        height: 1200px;
+        width: 1200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 50px;
+        border-radius: 0 20px 20px 0;
+    }
+}
+/*--------------------------------------------*/

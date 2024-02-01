@@ -1,0 +1,41 @@
+/* ***Index content*** */
+.main-index{
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text{
+            a{
+                .btn-index{
+                    margin-top: 35px;
+                    height: 60px;
+                    width: 250px;
+                    background-color: red;
+                    color: black;
+                    font-family: 'Bebas Neue', sans-serif;
+                    font-size: 35px;
+                    border-radius: 10px;
+                    letter-spacing: 1.5px;
+                    border: 2px solid #f1f1f1;
+                    text-align: center;    
+                    line-height: 60px;
+                    &:hover{
+                        background-color: transparent;
+                        color: red;
+                        border: 2px solid red;
+                    }
+                }
+            }
+        }
+        .hero{
+            background-image: url("../img/modelo-fitness.jpg");
+            height: 700px;
+            width: 540px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-left: 100px;
+        }
+    }
+}
+/*--------------------------------------------*/

@@ -1,0 +1,176 @@
+/* *** MEDIA QUERIES *** */
+@media only screen and (max-width:768px){
+        /* *** Index *** */
+        .main-index{
+            .flex-container{
+                padding: 3rem;
+                .text{
+                    h1{
+                        font-size: 4rem;
+                    }
+                    p{
+                        margin-bottom: 0;
+                        font-size: 16px;
+                    }
+                    a{
+                        .btn-index{
+                            height: 50px;
+                            width: 200px;
+                            font-size: 28px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+                .hero{
+                    margin-left: 3rem;
+                    height: 560px;
+                    width: 432px;
+                }
+            }
+        }
+        /* *** planes *** */
+        .main-planes{
+            .card-container{
+                padding-bottom: 5rem;
+                .asesorias{
+                    .card{
+                        height: 23rem;
+                        margin: 0.7rem;
+                        img{
+                            height: 12.5rem;
+                        }
+                        .card-texto{
+                            height: 85%;
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+        /* *** testimonios *** */
+        .main-testimonios{
+            section{
+                .grid-container{
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(6, 1fr);
+                }
+            }
+        }
+            /* *** nosotros *** */
+            .main-nosotros{
+                .cont{
+                    padding: 0 2rem 0 2rem;
+                    .texto-nosotros{
+                        width: 700px;
+                        p{
+                            padding-bottom: 1rem;
+                        }
+                    }
+                    .nosotros{
+                        width: 1000px;
+                    }
+                }
+            }
+            /* *** Contacto *** */
+            .main-contacto{
+                .contact-content{
+                    padding: 0 2.5rem 0 2.5rem;
+                    .hero-contacto{
+                        height: 250px;
+                        width: 850px;
+                        margin-left: 3rem;
+                    }
+                }
+            }
+}
+
+@media only screen and (max-width:576px){
+        /* *** Index media *** */
+        .main-index{
+            .flex-container{
+                padding-bottom: 4rem;
+                .text{
+                    text-align: center;
+                    h1{
+                        font-size: 6rem;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    a{
+                        .btn-index{
+                            height: 60px;
+                            width: 300px;
+                            font-size: 35px;
+                        }
+                    }
+                }
+                .hero{
+                    display: none;
+                }
+            }
+        }
+         /* *** planes media *** */
+        .main-planes{
+            .card-container{
+                padding-bottom: 3rem;
+                .asesorias{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .card{
+                        margin-bottom: 3rem;
+                        height: 28rem;
+                        width: 22rem;
+                        .img{
+                            height: 20rem;
+                        }
+                        .card-texto{
+                            height: 75%;
+                            h3{
+                                font-size: 1.75rem;
+                            }
+                            p{
+                                font-size: 1.20rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+            /* *** testimonios media *** */
+            .main-testimonios{
+                section{
+                    .grid-container{
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(12, 1fr);
+                        padding: 0 4rem 4rem 4rem;
+                    }
+                }
+            }
+                /* *** nosotros media *** */
+                .main-nosotros{
+                    .cont{
+                        flex-direction: column;
+                        padding-bottom: 5rem;
+                        .texto-nosotros{
+                            width: 400px;
+                            padding-bottom: 4rem;
+                        }
+                        .nosotros{
+                            width: 450px;
+                            height: 400px;
+                        }
+                    }
+                }
+                    /* *** contacto media *** */
+                    .main-contacto{
+                        .contact-content{
+                            .hero-contacto{
+                                display: none;
+                            }
+                        }
+                    }
+}

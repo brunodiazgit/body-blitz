@@ -1,0 +1,55 @@
+/* ***Cards I Apartado planes*** */
+.main-planes{
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 7rem;
+        .asesorias{
+            display: flex;
+            justify-content: space-evenly;
+            .card{
+                height: 25.625rem;
+                width: 21.25rem;
+                background-color: rgb(252, 252, 33);
+                border-radius: 20px 0;
+                overflow: hidden;
+                img{
+                    height: 12.5rem;
+                    width: 100%;
+                }
+                .card-texto{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    .btn-card{
+                        height: 2.5rem;
+                        width: 6.25rem;
+                        letter-spacing: 0.5px;
+                        border-radius: 10px;
+                        background-color: rgb(214, 214, 214);
+                        &:hover{
+                            background-color: rgb(26, 26, 26);
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shadow-1{
+    box-shadow: 14px 12px 15px 0px rgba(212, 212, 212, 0.356);
+    -webkit-box-shadow: 14px 12px 15px 0px rgba(212, 212, 212, 0.356);
+    -moz-box-shadow: 14px 12px 15px 0px rgba(212, 212, 212, 0.356);
+}
+
+
+.shadow-2{
+    box-shadow: 14px 12px 15px 0px rgb(102, 43, 91);
+    -webkit-box-shadow: 14px 12px 15px 0px rgb(102, 43, 91);
+    -moz-box-shadow: 14px 12px 15px 0px rgb(102, 43, 91);
+}
+/*--------------------------------------------*/

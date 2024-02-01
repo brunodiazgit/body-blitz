@@ -1,0 +1,37 @@
+/* ***Estilos globales*** */
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fffdfc;
+}
+
+main{
+    background-color: #000000;
+}
+
+footer{
+    background-color: #655f61;
+}
+
+h1{
+    font-size: 7rem;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+p{
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/*--------------------------------------------*/

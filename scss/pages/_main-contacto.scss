@@ -1,0 +1,29 @@
+/* *** Apartado Contacto *** */
+.main-contacto{
+    .contact-content{
+        form{
+            .btn-form{
+                height: 30px;
+                width: 150px;
+                border-radius: 10px;
+                background-color: red;
+                color: white;
+                border: none;
+                letter-spacing: 1px;
+                &:hover{
+                    background-color: rgb(158, 0, 0);
+                    color: white;
+                }
+            }
+        }
+        .hero-contacto{
+            background-image: url("../img/img-contacto.jpg");
+            height: 430px;
+            width: 700px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+/*--------------------------------------------*/
