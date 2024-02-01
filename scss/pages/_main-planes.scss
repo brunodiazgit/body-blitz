@@ -46,15 +46,11 @@
 }
 
 .shadow-1{
-    box-shadow: 14px 12px 15px 0px rgba(212, 212, 212, 0.356);
-    -webkit-box-shadow: 14px 12px 15px 0px rgba(212, 212, 212, 0.356);
-    -moz-box-shadow: 14px 12px 15px 0px rgba(212, 212, 212, 0.356);
+    @include sombra;
 }
 
 
 .shadow-2{
-    box-shadow: 14px 12px 15px 0px rgb(102, 43, 91);
-    -webkit-box-shadow: 14px 12px 15px 0px rgb(102, 43, 91);
-    -moz-box-shadow: 14px 12px 15px 0px rgb(102, 43, 91);
+    @include sombra(rgb(102, 43, 91));
 }
 /*--------------------------------------------*/

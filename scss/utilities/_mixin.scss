@@ -1,0 +1,6 @@
+@mixin sombra($color: rgba(212, 212, 212, 0.356)) {
+    box-shadow: 14px 12px 15px 0px $color;
+    -webkit-box-shadow: 14px 12px 15px 0px $color;
+    -moz-box-shadow: 14px 12px 15px 0px $color;
+}
+
