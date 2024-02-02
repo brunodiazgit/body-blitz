@@ -333,6 +333,13 @@ footer .text-copy p {
   .main-testimonios section .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    padding: 0 3rem 3rem 3rem;
+  }
+  .main-testimonios section .grid-container div .textot h4 {
+    font-size: 1.2rem;
+  }
+  .main-testimonios section .grid-container div .textot p {
+    font-size: 0.8rem;
   }
   /* *** nosotros *** */
   .main-nosotros .cont {
@@ -410,6 +417,12 @@ footer .text-copy p {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr);
     padding: 0 4rem 4rem 4rem;
+  }
+  .main-testimonios section .grid-container div .textot h4 {
+    font-size: 2rem;
+  }
+  .main-testimonios section .grid-container div .textot p {
+    font-size: 1.3rem;
   }
   /* *** nosotros media *** */
   .main-nosotros .cont {
