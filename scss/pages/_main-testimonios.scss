@@ -7,10 +7,22 @@
         gap: 3rem;
         padding: 0 7rem 7rem 7rem;
         div{
+            position: relative;
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+            .textot{
+                @extend %testimonio;
+                &:hover{
+                    opacity: 1;
+                    transition: 1s;
+                }
+                p{
+                    font-size: 1.5rem;
+                    color: black;
+                }
             }
         }
     }

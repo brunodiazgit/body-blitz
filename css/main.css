@@ -33,6 +33,12 @@ h2 {
   padding: 35px;
 }
 
+h4 {
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: black;
+}
+
 p {
   font-size: 1.25rem;
   font-family: "Roboto", sans-serif;
@@ -44,6 +50,23 @@ button:active {
 }
 
 /*--------------------------------------------*/
+.main-testimonios .grid-container div .textot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(182, 182, 182, 0.89), rgba(240, 240, 240, 0.849));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 4rem 0 4rem;
+  opacity: 0;
+  transition: 1s;
+}
+
 /* *** Header *** */
 header {
   z-index: 1;
@@ -180,10 +203,21 @@ header .navbar-toggler:hover {
   gap: 3rem;
   padding: 0 7rem 7rem 7rem;
 }
+.main-testimonios .grid-container div {
+  position: relative;
+}
 .main-testimonios .grid-container div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.main-testimonios .grid-container div .textot:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.main-testimonios .grid-container div .textot p {
+  font-size: 1.5rem;
+  color: black;
 }
 
 /*--------------------------------------------*/
