@@ -14,12 +14,30 @@ header{
     .menu-nav{
         flex-grow: 0;
     }
-    .nav-item{
+    .nav-item {
         text-decoration: none;
         color: #fffdfc;
         font-size: 1.3rem;
-        &:hover{
-        color: red;
+        position: relative;
+    
+        &:hover {
+            color: red;
+    
+            &::before {
+                width: 100%;
+            }
+        }
+    
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: red;
+            transition: width 0.3s ease;
+            z-index: -1;
         }
     }
     .navbar-nav{

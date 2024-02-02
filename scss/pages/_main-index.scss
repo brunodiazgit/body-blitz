@@ -19,10 +19,13 @@
                     border: 2px solid #f1f1f1;
                     text-align: center;    
                     line-height: 60px;
+                    transition: all 0.3s ease; 
                     &:hover{
                         background-color: transparent;
                         color: red;
                         border: 2px solid red;
+                        width: 300px;
+                        border-radius: 10px 0 10px 10px;
                     }
                 }
             }

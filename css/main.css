@@ -85,9 +85,24 @@ header .nav-item {
   text-decoration: none;
   color: #fffdfc;
   font-size: 1.3rem;
+  position: relative;
 }
 header .nav-item:hover {
   color: red;
+}
+header .nav-item:hover::before {
+  width: 100%;
+}
+header .nav-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+  z-index: -1;
 }
 header .navbar-nav {
   column-gap: 1.5rem;
@@ -120,11 +135,14 @@ header .navbar-toggler:hover {
   border: 2px solid #f1f1f1;
   text-align: center;
   line-height: 60px;
+  transition: all 0.3s ease;
 }
 .main-index .flex-container .text a .btn-index:hover {
   background-color: transparent;
   color: red;
   border: 2px solid red;
+  width: 300px;
+  border-radius: 10px 0 10px 10px;
 }
 .main-index .flex-container .hero {
   background-image: url("../img/modelo-fitness.jpg");
