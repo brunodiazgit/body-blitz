@@ -240,11 +240,11 @@ header .navbar-toggler:hover {
 
 /*--------------------------------------------*/
 /* ***Sección de Nosotros***  */
-.main-nosotros .texto-nosotros {
+.main-nosotros .cont .texto-nosotros {
   width: 500px;
   padding-bottom: 5rem;
 }
-.main-nosotros .nosotros {
+.main-nosotros .cont .nosotros {
   background-image: url("./../img/sobre-nosotros.jpg");
   height: 1200px;
   width: 1200px;
@@ -361,25 +361,32 @@ footer .text-copy p {
   }
   /* *** nosotros *** */
   .main-nosotros .cont {
+    flex-direction: column;
     padding: 0 2rem 0 2rem;
   }
   .main-nosotros .cont .texto-nosotros {
-    width: 700px;
+    padding-bottom: 0;
+    width: auto;
   }
   .main-nosotros .cont .texto-nosotros p {
     padding-bottom: 1rem;
   }
   .main-nosotros .cont .nosotros {
-    width: 1000px;
+    width: 550px;
+    height: 350px;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
   /* *** Contacto *** */
   .main-contacto .contact-content {
+    flex-direction: column;
     padding: 0 2.5rem 0 2.5rem;
   }
   .main-contacto .contact-content .hero-contacto {
-    height: 250px;
-    width: 850px;
-    margin-left: 3rem;
+    height: 300px;
+    width: 450px;
+    margin-top: 2rem;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -445,18 +452,80 @@ footer .text-copy p {
   /* *** nosotros media *** */
   .main-nosotros .cont {
     flex-direction: column;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
   }
   .main-nosotros .cont .texto-nosotros {
-    width: 400px;
-    padding-bottom: 4rem;
+    width: auto;
+    padding-bottom: 0;
   }
   .main-nosotros .cont .nosotros {
-    width: 450px;
-    height: 400px;
+    display: none;
   }
   /* *** contacto media *** */
   .main-contacto .contact-content .hero-contacto {
+    display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  /* *** testimonios media *** */
+  .main-testimonios section .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 0 4rem 4rem 4rem;
+  }
+  .main-testimonios section .grid-container div .textot h4 {
+    font-size: medium;
+  }
+  .main-testimonios section .grid-container div .textot p {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /* *** planes media *** */
+  .main-planes .card-container {
+    padding-bottom: 3rem;
+  }
+  .main-planes .card-container .asesorias {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-planes .card-container .asesorias .card {
+    margin-bottom: 3rem;
+    height: auto;
+    width: auto;
+  }
+  .main-planes .card-container .asesorias .card .img {
+    height: 20rem;
+  }
+  .main-planes .card-container .asesorias .card .card-texto {
+    height: 75%;
+  }
+  .main-planes .card-container .asesorias .card .card-texto h3 {
+    font-size: 1.75rem;
+  }
+  .main-planes .card-container .asesorias .card .card-texto p {
+    font-size: 1.2rem;
+  }
+  /* *** testimonios media *** */
+  .main-testimonios section .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 0 4rem 4rem 4rem;
+  }
+  .main-testimonios section .grid-container div .textot h4 {
+    font-size: medium;
+  }
+  .main-testimonios section .grid-container div .textot p {
+    font-size: small;
+  }
+  /* *** testimonios media *** */
+  .main-testimonios section .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 0 4rem 4rem 4rem;
+  }
+  .main-testimonios section .grid-container div .textot {
     display: none;
   }
 }

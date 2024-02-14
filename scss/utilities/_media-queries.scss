@@ -72,26 +72,33 @@
             /* *** nosotros *** */
             .main-nosotros{
                 .cont{
+                    flex-direction: column;
                     padding: 0 2rem 0 2rem;
                     .texto-nosotros{
-                        width: 700px;
+                        padding-bottom: 0;
+                        width: auto;
                         p{
                             padding-bottom: 1rem;
                         }
                     }
                     .nosotros{
-                        width: 1000px;
+                        width: 550px;
+                        height: 350px;
+                        margin-left: 0;
+                        margin-bottom: 2rem;
+                        margin-top: 1rem;
                     }
                 }
             }
             /* *** Contacto *** */
             .main-contacto{
                 .contact-content{
+                    flex-direction: column;
                     padding: 0 2.5rem 0 2.5rem;
                     .hero-contacto{
-                        height: 250px;
-                        width: 850px;
-                        margin-left: 3rem;
+                        height: 300px;
+                        width: 450px;
+                        margin-top: 2rem;
                     }
                 }
             }
@@ -175,14 +182,13 @@
                 .main-nosotros{
                     .cont{
                         flex-direction: column;
-                        padding-bottom: 5rem;
+                        padding-bottom: 2rem;
                         .texto-nosotros{
-                            width: 400px;
-                            padding-bottom: 4rem;
+                            width: auto;
+                            padding-bottom: 0;
                         }
                         .nosotros{
-                            width: 450px;
-                            height: 400px;
+                        display: none;
                         }
                     }
                 }
@@ -194,4 +200,94 @@
                             }
                         }
                     }
+}
+
+
+@media only screen and (max-width:575px){
+    /* *** testimonios media *** */
+    .main-testimonios{
+        section{
+            .grid-container{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(12, 1fr);
+                padding: 0 4rem 4rem 4rem;
+                div{
+                    .textot{
+                        h4{
+                            font-size:medium;
+                        }
+                        p{
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:425px){
+    /* *** planes media *** */
+    .main-planes{
+        .card-container{
+            padding-bottom: 3rem;
+            .asesorias{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .card{
+                    margin-bottom: 3rem;
+                    height: auto;
+                    width: auto;
+                    .img{
+                        height: 20rem;
+                    }
+                    .card-texto{
+                        height: 75%;
+                        h3{
+                            font-size: 1.75rem;
+                        }
+                        p{
+                            font-size: 1.20rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* *** testimonios media *** */
+    .main-testimonios{
+        section{
+            .grid-container{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(12, 1fr);
+                padding: 0 4rem 4rem 4rem;
+                div{
+                    .textot{
+                        h4{
+                            font-size:medium;
+                        }
+                        p{
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* *** testimonios media *** */
+    .main-testimonios{
+        section{
+            .grid-container{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(12, 1fr);
+                padding: 0 4rem 4rem 4rem;
+                div{
+                    .textot{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
