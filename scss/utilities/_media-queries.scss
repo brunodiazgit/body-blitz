@@ -5,7 +5,7 @@
             .flex-container{
                 padding: 3rem;
                 .text{
-                    h1{
+                    .frase-index{
                         font-size: 4rem;
                     }
                     p{
@@ -58,8 +58,8 @@
                     padding: 0 3rem 3rem 3rem;
                     div{
                         .textot{
-                            h4{
-                                font-size: 1.2rem;
+                            .t-title{
+                                font-size: 1rem;
                             }
                             p{
                                 font-size: 0.8rem;
@@ -111,14 +111,16 @@
                 padding-bottom: 4rem;
                 .text{
                     text-align: center;
-                    h1{
+                    .frase-index{
                         font-size: 6rem;
                     }
                     p{
+                        padding-right: 2rem;
                         font-size: 20px;
                     }
                     a{
                         .btn-index{
+                            margin-right: 2rem;
                             height: 60px;
                             width: 300px;
                             font-size: 35px;
@@ -147,7 +149,10 @@
                         }
                         .card-texto{
                             height: 75%;
-                            h3{
+                            h1{
+                                font-size: 1.75rem ;
+                            }
+                            h2{
                                 font-size: 1.75rem;
                             }
                             p{
@@ -167,11 +172,11 @@
                         padding: 0 4rem 4rem 4rem;
                         div{
                             .textot{
-                                h4{
-                                    font-size: 2rem;
+                                .t-title{
+                                    font-size: 1.5rem;
                                 }
                                 p{
-                                    font-size: 1.3rem;
+                                    font-size: 1.2rem;
                                 }
                             }
                         }
@@ -200,7 +205,7 @@
                             }
                         }
                     }
-}
+                }
 
 
 @media only screen and (max-width:575px){
@@ -213,7 +218,7 @@
                 padding: 0 4rem 4rem 4rem;
                 div{
                     .textot{
-                        h4{
+                        h2{
                             font-size:medium;
                         }
                         p{
@@ -226,7 +231,7 @@
     }
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:482px){
     /* *** planes media *** */
     .main-planes{
         .card-container{
@@ -264,7 +269,7 @@
                 padding: 0 4rem 4rem 4rem;
                 div{
                     .textot{
-                        h4{
+                        h2{
                             font-size:medium;
                         }
                         p{

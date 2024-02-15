@@ -21,8 +21,11 @@ footer {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 3.5rem;
   font-weight: 100;
+  display: flex;
+  justify-content: center;
+  padding: 35px;
 }
 
 h2 {
@@ -31,12 +34,6 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 35px;
-}
-
-h4 {
-  font-size: 1.8rem;
-  font-weight: 100;
-  color: black;
 }
 
 p {
@@ -117,13 +114,24 @@ header .navbar-toggler:hover {
 
 /*--------------------------------------------*/
 /* ***Index content*** */
+.main-index {
+  padding-bottom: 2rem;
+}
 .main-index .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.main-index .flex-container .text .frase-index {
+  font-size: 7rem;
+  font-weight: 100;
+}
+.main-index .flex-container .text p {
+  padding-left: 2.5rem;
+}
 .main-index .flex-container .text a .btn-index {
   margin-top: 35px;
+  margin-left: 2.5rem;
   height: 60px;
   width: 250px;
   background-color: red;
@@ -146,7 +154,7 @@ header .navbar-toggler:hover {
 }
 .main-index .flex-container .hero {
   background-image: url("../img/modelo-fitness.jpg");
-  height: 700px;
+  height: 670px;
   width: 540px;
   background-repeat: no-repeat;
   background-position: center;
@@ -233,6 +241,12 @@ header .navbar-toggler:hover {
   opacity: 1;
   transition: 1s;
 }
+.main-testimonios .grid-container div .textot .t-title {
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: black;
+  padding-bottom: 0;
+}
 .main-testimonios .grid-container div .textot p {
   font-size: 1.5rem;
   color: black;
@@ -241,8 +255,13 @@ header .navbar-toggler:hover {
 /*--------------------------------------------*/
 /* ***Sección de Nosotros***  */
 .main-nosotros .cont .texto-nosotros {
-  width: 500px;
+  width: 35rem;
   padding-bottom: 5rem;
+}
+.main-nosotros .cont .texto-nosotros .nosotros-title {
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 0 3rem 1rem 0;
 }
 .main-nosotros .cont .nosotros {
   background-image: url("./../img/sobre-nosotros.jpg");
@@ -312,7 +331,7 @@ footer .text-copy p {
   .main-index .flex-container {
     padding: 3rem;
   }
-  .main-index .flex-container .text h1 {
+  .main-index .flex-container .text .frase-index {
     font-size: 4rem;
   }
   .main-index .flex-container .text p {
@@ -353,8 +372,8 @@ footer .text-copy p {
     grid-template-rows: repeat(6, 1fr);
     padding: 0 3rem 3rem 3rem;
   }
-  .main-testimonios section .grid-container div .textot h4 {
-    font-size: 1.2rem;
+  .main-testimonios section .grid-container div .textot .t-title {
+    font-size: 1rem;
   }
   .main-testimonios section .grid-container div .textot p {
     font-size: 0.8rem;
@@ -397,13 +416,15 @@ footer .text-copy p {
   .main-index .flex-container .text {
     text-align: center;
   }
-  .main-index .flex-container .text h1 {
+  .main-index .flex-container .text .frase-index {
     font-size: 6rem;
   }
   .main-index .flex-container .text p {
+    padding-right: 2rem;
     font-size: 20px;
   }
   .main-index .flex-container .text a .btn-index {
+    margin-right: 2rem;
     height: 60px;
     width: 300px;
     font-size: 35px;
@@ -431,7 +452,10 @@ footer .text-copy p {
   .main-planes .card-container .asesorias .card .card-texto {
     height: 75%;
   }
-  .main-planes .card-container .asesorias .card .card-texto h3 {
+  .main-planes .card-container .asesorias .card .card-texto h1 {
+    font-size: 1.75rem;
+  }
+  .main-planes .card-container .asesorias .card .card-texto h2 {
     font-size: 1.75rem;
   }
   .main-planes .card-container .asesorias .card .card-texto p {
@@ -443,11 +467,11 @@ footer .text-copy p {
     grid-template-rows: repeat(12, 1fr);
     padding: 0 4rem 4rem 4rem;
   }
-  .main-testimonios section .grid-container div .textot h4 {
-    font-size: 2rem;
+  .main-testimonios section .grid-container div .textot .t-title {
+    font-size: 1.5rem;
   }
   .main-testimonios section .grid-container div .textot p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   /* *** nosotros media *** */
   .main-nosotros .cont {
@@ -473,14 +497,14 @@ footer .text-copy p {
     grid-template-rows: repeat(12, 1fr);
     padding: 0 4rem 4rem 4rem;
   }
-  .main-testimonios section .grid-container div .textot h4 {
+  .main-testimonios section .grid-container div .textot h2 {
     font-size: medium;
   }
   .main-testimonios section .grid-container div .textot p {
     font-size: small;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 482px) {
   /* *** planes media *** */
   .main-planes .card-container {
     padding-bottom: 3rem;
@@ -513,7 +537,7 @@ footer .text-copy p {
     grid-template-rows: repeat(12, 1fr);
     padding: 0 4rem 4rem 4rem;
   }
-  .main-testimonios section .grid-container div .textot h4 {
+  .main-testimonios section .grid-container div .textot h2 {
     font-size: medium;
   }
   .main-testimonios section .grid-container div .textot p {

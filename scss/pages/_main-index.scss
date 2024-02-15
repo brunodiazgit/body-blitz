@@ -1,13 +1,22 @@
 /* ***Index content*** */
 .main-index{
+    padding-bottom: 2rem;
     .flex-container{
         display: flex;
         justify-content: center;
         align-items: center;
         .text{
+            .frase-index{
+                font-size: 7rem;
+                font-weight: 100;
+            }
+            p{
+                padding-left: 2.5rem;
+            }
             a{
                 .btn-index{
                     margin-top: 35px;
+                    margin-left: 2.5rem;
                     height: 60px;
                     width: 250px;
                     background-color: red;
@@ -32,7 +41,7 @@
         }
         .hero{
             background-image: url("../img/modelo-fitness.jpg");
-            height: 700px;
+            height: 670px;
             width: 540px;
             background-repeat: no-repeat;
             background-position: center;
