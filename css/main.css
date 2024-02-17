@@ -172,6 +172,7 @@ header .navbar-toggler:hover {
 .main-planes .card-container .asesorias {
   display: flex;
   justify-content: space-evenly;
+  column-gap: 2rem;
 }
 .main-planes .card-container .asesorias .card {
   height: 25.625rem;
@@ -242,13 +243,13 @@ header .navbar-toggler:hover {
   transition: 1s;
 }
 .main-testimonios .grid-container div .textot .t-title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 100;
   color: black;
   padding-bottom: 0;
 }
 .main-testimonios .grid-container div .textot p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: black;
 }
 
@@ -326,6 +327,47 @@ footer .text-copy p {
 }
 
 /* *** MEDIA QUERIES *** */
+@media only screen and (max-width: 1500px) {
+  /* *** testimonios *** */
+  .main-testimonios section .grid-container div .textot .t-title {
+    font-size: 1.1rem;
+  }
+  .main-testimonios section .grid-container div .textot p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* *** planes *** */
+  .main-planes .card-container .asesorias .card {
+    height: 25rem;
+    width: 18rem;
+  }
+  .main-planes .card-container .asesorias .card .card-texto {
+    height: 85%;
+  }
+  .main-planes .card-container .asesorias .card .card-texto p {
+    font-size: 1rem;
+  }
+  /* *** Contacto *** */
+  .main-contacto .contact-content .hero-contacto {
+    height: 380px;
+    width: 500px;
+    margin-right: 1.5rem;
+  }
+  /* *** testimonios *** */
+  .main-testimonios section .grid-container div .textot {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1002px) {
+  /* *** Index *** */
+  .main-index .flex-container .text .frase-index {
+    font-size: 6rem;
+  }
+  .main-index .flex-container .hero {
+    margin-left: 0;
+  }
+}
 @media only screen and (max-width: 768px) {
   /* *** Index *** */
   .main-index .flex-container {
@@ -344,6 +386,9 @@ footer .text-copy p {
     font-size: 28px;
     line-height: 25px;
   }
+  .main-index .flex-container .text a .btn-index:hover {
+    width: 220px;
+  }
   .main-index .flex-container .hero {
     margin-left: 3rem;
     height: 560px;
@@ -353,24 +398,26 @@ footer .text-copy p {
   .main-planes .card-container {
     padding-bottom: 5rem;
   }
+  .main-planes .card-container .asesorias {
+    flex-direction: column;
+    align-items: center;
+  }
   .main-planes .card-container .asesorias .card {
-    height: 23rem;
-    margin: 0.7rem;
+    margin-bottom: 3rem;
+    height: 28rem;
+    width: 22rem;
   }
   .main-planes .card-container .asesorias .card img {
-    height: 12.5rem;
-  }
-  .main-planes .card-container .asesorias .card .card-texto {
-    height: 85%;
-  }
-  .main-planes .card-container .asesorias .card .card-texto p {
-    font-size: 1rem;
+    height: 20rem;
   }
   /* *** testimonios *** */
   .main-testimonios section .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     padding: 0 3rem 3rem 3rem;
+  }
+  .main-testimonios section .grid-container div .textot {
+    display: block;
   }
   .main-testimonios section .grid-container div .textot .t-title {
     font-size: 1rem;
@@ -406,6 +453,37 @@ footer .text-copy p {
     height: 300px;
     width: 450px;
     margin-top: 2rem;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 740px) {
+  /* *** testimonios media *** */
+  .main-testimonios section .grid-container div .textot {
+    display: none;
+  }
+}
+@media only screen and (max-width: 695px) {
+  .main-index .flex-container .text .frase-index {
+    font-size: 7rem;
+  }
+  .main-index .flex-container .text p {
+    font-size: 1.4rem;
+  }
+  .main-index .flex-container .text a .btn-index {
+    margin-top: 42px;
+    height: 65px;
+    width: 400px;
+    font-size: 40px;
+  }
+  .main-index .flex-container .text a .btn-index:hover {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    width: 420px;
+    border-radius: 10px 0 10px 10px;
+  }
+  .main-index .flex-container .hero {
+    display: none;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -429,8 +507,12 @@ footer .text-copy p {
     width: 300px;
     font-size: 35px;
   }
-  .main-index .flex-container .hero {
-    display: none;
+  .main-index .flex-container .text a .btn-index:hover {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    width: 340px;
+    border-radius: 10px 0 10px 10px;
   }
   /* *** planes media *** */
   .main-planes .card-container {
@@ -440,14 +522,6 @@ footer .text-copy p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .main-planes .card-container .asesorias .card {
-    margin-bottom: 3rem;
-    height: 28rem;
-    width: 22rem;
-  }
-  .main-planes .card-container .asesorias .card .img {
-    height: 20rem;
   }
   .main-planes .card-container .asesorias .card .card-texto {
     height: 75%;
@@ -466,6 +540,9 @@ footer .text-copy p {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr);
     padding: 0 4rem 4rem 4rem;
+  }
+  .main-testimonios section .grid-container div .textot {
+    display: block;
   }
   .main-testimonios section .grid-container div .textot .t-title {
     font-size: 1.5rem;
@@ -490,21 +567,33 @@ footer .text-copy p {
     display: none;
   }
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 535px) {
+  /* *** index *** */
+  .main-index .flex-container .text .frase-index {
+    font-size: 4.5rem;
+  }
+  .main-index .flex-container .text p {
+    font-size: 1rem;
+  }
+  .main-index .flex-container .text a .btn-index {
+    font-size: 30px;
+    height: 45px;
+    width: 230px;
+  }
+  .main-index .flex-container .text a .btn-index:hover {
+    width: 250px;
+  }
   /* *** testimonios media *** */
   .main-testimonios section .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr);
     padding: 0 4rem 4rem 4rem;
   }
-  .main-testimonios section .grid-container div .textot h2 {
-    font-size: medium;
-  }
-  .main-testimonios section .grid-container div .textot p {
-    font-size: small;
+  .main-testimonios section .grid-container div .textot {
+    display: none;
   }
 }
-@media only screen and (max-width: 482px) {
+@media only screen and (max-width: 356px) {
   /* *** planes media *** */
   .main-planes .card-container {
     padding-bottom: 3rem;
@@ -515,42 +604,11 @@ footer .text-copy p {
     align-items: center;
   }
   .main-planes .card-container .asesorias .card {
-    margin-bottom: 3rem;
     height: auto;
     width: auto;
   }
-  .main-planes .card-container .asesorias .card .img {
-    height: 20rem;
-  }
-  .main-planes .card-container .asesorias .card .card-texto {
-    height: 75%;
-  }
-  .main-planes .card-container .asesorias .card .card-texto h3 {
-    font-size: 1.75rem;
-  }
-  .main-planes .card-container .asesorias .card .card-texto p {
-    font-size: 1.2rem;
-  }
-  /* *** testimonios media *** */
-  .main-testimonios section .grid-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    padding: 0 4rem 4rem 4rem;
-  }
-  .main-testimonios section .grid-container div .textot h2 {
-    font-size: medium;
-  }
-  .main-testimonios section .grid-container div .textot p {
-    font-size: small;
-  }
-  /* *** testimonios media *** */
-  .main-testimonios section .grid-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    padding: 0 4rem 4rem 4rem;
-  }
-  .main-testimonios section .grid-container div .textot {
-    display: none;
+  .main-planes .card-container .asesorias .card img {
+    height: auto;
   }
 }
 

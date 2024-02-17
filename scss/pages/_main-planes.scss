@@ -7,6 +7,7 @@
         .asesorias{
             display: flex;
             justify-content: space-evenly;
+            column-gap: 2rem;
             .card{
                 height: 25.625rem;
                 width: 21.25rem;
